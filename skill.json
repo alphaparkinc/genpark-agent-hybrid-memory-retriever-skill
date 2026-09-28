@@ -1,0 +1,32 @@
+{
+  "name": "genpark-agent-hybrid-memory-retriever-skill",
+  "version": "1.0.0",
+  "description": "Production-grade hybrid sparse-dense memory retrieval engine combining BM25 keyword search, semantic n-gram cosine similarity, and recency decay ranking for agent episodic long-term memory.",
+  "category": "Service",
+  "author": "AlphaPark",
+  "tags": [
+    "agent-memory",
+    "hybrid-search",
+    "bm25",
+    "mem0",
+    "mcp"
+  ],
+  "tools": [
+    {
+      "name": "store_memory",
+      "description": "Store an episodic memory entry with tags and importance factor."
+    },
+    {
+      "name": "retrieve_hybrid_memories",
+      "description": "Query memories using hybrid sparse-dense search with recency decay."
+    },
+    {
+      "name": "prune_decayed_memories",
+      "description": "Prune low-relevance stale memories to manage memory window."
+    },
+    {
+      "name": "run_memory_benchmark",
+      "description": "Run comprehensive hybrid memory storage and retrieval benchmark."
+    }
+  ]
+}
